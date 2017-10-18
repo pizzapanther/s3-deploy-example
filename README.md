@@ -1,3 +1,3 @@
 # s3-deploy-example
 
-## this is awesome
+## this is more awesome
