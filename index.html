@@ -13,10 +13,18 @@
       }
     </style>
     <script>
-      while (1) {
-        var password = prompt('Page Password?');
-        if (password == 'narf') {
-          break;
+      var b64 = 'bmFyZg==';
+      
+      if (b64) {
+        var password = localStorage.password;
+        
+        while (1) {
+          if (password == atob(b64)) {
+            localStorage.password = password;
+            break;
+          }
+          
+          password = prompt('Page Password?');
         }
       }
       
