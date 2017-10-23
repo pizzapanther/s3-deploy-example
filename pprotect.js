@@ -12,4 +12,4 @@ document.addEventListener("DOMContentLoaded", function() {
   }
   var d = document.querySelector('body');
   d.classList.add('active');
-}
+});
