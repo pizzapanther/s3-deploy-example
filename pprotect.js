@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
   var s = document.querySelector("#pprotect");
   var encoded = s.attributes.src.value;
   var url = new URL(encoded, location.href)
+  var b64 = url.searchParams.get('p');
   
   if (b64) {
     var password = localStorage.password;
@@ -13,6 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
       password = prompt('Page Password?');
     }
   }
+  
   var d = document.querySelector('body');
   d.classList.add('active');
 });
