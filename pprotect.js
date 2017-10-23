@@ -1,3 +1,12 @@
+document.write("<style>\
+  body {\
+    visibility: hidden;\
+  }\
+  body.active {\
+    visibility: visible;\
+  }\
+</style>");
+               
 document.addEventListener("DOMContentLoaded", function() {
   var s = document.querySelector("#pprotect");
   var encoded = s.attributes.src.value;
