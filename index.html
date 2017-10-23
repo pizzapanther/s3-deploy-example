@@ -13,7 +13,15 @@
       }
     </style>
     <script>
+      while (1) {
+        var password = prompt('Page Password?');
+        if (password == 'narf') {
+          break;
+        }
+      }
       
+      var d = document.querySelector('body');
+      d.classList.add('active');
     </script>
   </head>
   <body>
