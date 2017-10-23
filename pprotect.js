@@ -1,5 +1,8 @@
 document.addEventListener("DOMContentLoaded", function() {
-  var b64 = 'bmFyZg==';
+  var s = document.querySelector("#pprotect");
+  var encoded = s.attributes.src.value;
+  var url = new URL(encoded, location.href)
+  
   if (b64) {
     var password = localStorage.password;
     while (1) {
